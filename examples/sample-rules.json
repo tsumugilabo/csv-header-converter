@@ -1,0 +1,19 @@
+{
+  "columns": [
+    { "name": "店舗コード", "type": "fixed", "value": "SHOP001" },
+    { "name": "区分", "type": "fixed", "value": "N" },
+    { "name": "注文日", "type": "source", "from": "受注日時" },
+    { "name": "注文番号", "type": "source", "from": "伝票番号" },
+    { "name": "注文者郵便番号", "type": "source", "from": "注文者〒" },
+    { "name": "注文者住所", "type": "join", "from": ["注文者住所1", "注文者住所2"], "sep": "" },
+    { "name": "注文者氏名", "type": "source", "from": "注文者名" },
+    { "name": "発送先郵便番号", "type": "source", "from": "届け先〒" },
+    { "name": "発送先住所", "type": "source", "from": "届け先住所" },
+    { "name": "発送先氏名", "type": "source", "from": "届け先名" },
+    { "name": "支払い方法", "type": "fixed", "value": "クレジット" },
+    { "name": "商品コード", "type": "source", "from": "商品コード" },
+    { "name": "数量", "type": "source", "from": "数量" },
+    { "name": "明細番号", "type": "seq", "start": 1, "pad": 4, "groupBy": "伝票番号" },
+    { "name": "ステータス", "type": "fixed", "value": "1" }
+  ]
+}
