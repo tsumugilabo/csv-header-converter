@@ -5,6 +5,10 @@
 
 データはブラウザの中だけで処理し、外部には送信しません。
 
+**すぐに試せます: https://tsumugilabo.github.io/csv-header-converter/** （`examples/sample-input.csv` を読み込むと動きが分かります）
+
+![操作のようす](docs/demo.gif)
+
 ## できること
 
 | 課題 | 対応 |
